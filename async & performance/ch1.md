@@ -100,7 +100,7 @@ There is no specification or set of requirements around how the `console.*` meth
 
 So, different browsers and JS environments do as they please, which can sometimes lead to confusing behavior.
 
-In particular, there are some browsers and some conditions that `console.log(..)` does not actually immediately output what it's given. The main reason this may happen is because I/O is a very slow and blocking part of many programs (not just JS). So, it may perform better (from the page/UI perspective) for a browser to handle `console` I/O asynchronously in the background, without you perhaps even knowing that occurred.
+In particular, there are some browsers and some conditions that `console.log(..)` does not actually immediately output what it's given. The main reason this may happen is because I/O is very slow and blocking part of many programs (not just JS). So, it may perform better (from the page/UI perspective) for a browser to handle `console` I/O asynchronously in the background, without you perhaps even knowing that occurred.
 
 A not terribly common, but possible, scenario where this could be *observable* (not from code itself but from the outside):
 
